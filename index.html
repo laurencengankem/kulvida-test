@@ -12,11 +12,6 @@
         document.getElementById('homeButton').style.color='grey';
         document.getElementById('contact').style.display='none';
         document.getElementById('contactButton').style.color='white';
-        var video=document.getElementById('myVideo');
-          if (video.paused) {
-    	    video.play();	
-          }
-        
       }else{
         document.getElementById('home').style.display='none';
         document.getElementById('homeButton').style.color='white';
@@ -65,6 +60,8 @@
     align-items: center;
     flex: 1;
     padding: 20px;
+    width: 80%;
+    margin-left: 15%;
   }
   .video-section,
   .photo-section {
@@ -136,6 +133,16 @@
     display: none;
 }
 
+ .contact-info{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+  }
+
+
+
 @media (max-width: 767px) {
   .golden-button {
     height: 100px;
@@ -143,11 +150,14 @@
   }
   .center-container {
     display: block;
+    width: 100%;
+    margin: 0px;
     padding: 20px;
   }
+  .video-section,
   .photo-section {
     width: 70%;
-    margin-left:11%;
+    margin-left:10%;
   }
   img{
    max-height: 250px ;
@@ -164,7 +174,18 @@
   </header>
 
 <div id="contact">
-<center><p> Inserirai i tuoi contatti qua<p></center>
+  <div class="contact-info">
+     <h2>Email</h2>
+     <p>ali@gmail.com</p>
+  </div>
+  <div class="contact-info">
+     <h2>Phone</h2>
+     <p>(+39) 38034574845</p>
+  </div>
+  <div class="contact-info">
+     <h2>Address</h2>
+     <p>Piazza Vittoria, 27100 PV</p>
+  </div>
 </div>
 <div id="home">
   <div class="center-buttons">
